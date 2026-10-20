@@ -1,3 +1,62 @@
-header{
-    background-color: rgb(0, 136, 255);
+/* Reset generale per rimuovere i margini di default del browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Stile della Header */
+.header {
+    background-color: #1a1a1a; /* Sfondo scuro elegante */
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between; /* Spazia Logo, Menu e Pulsante */
+    align-items: center; /* Allinea gli elementi verticalmente al centro */
+    padding: 15px 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Stile del Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff4d4d; /* Rosso pizza */
+}
+
+/* Stile della Lista dei link (Navbar) */
+.navbar ul {
+    display: flex;
+    list-style: none; /* Rimuove i pallini della lista */
+    gap: 25px; /* Spazio tra le voci di menu */
+}
+
+/* Stile dei Singoli Link */
+.navbar a {
+    color: #ffffff;
+    text-decoration: none; /* Rimuove la sottolineatura */
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Effetto al passaggio del mouse sui link */
+.navbar a:hover {
+    color: #ff4d4d;
+}
+
+/* Pulsante di Prenotazione */
+.btn-prenota {
+    background-color: #ff4d4d;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Effetto al passaggio del mouse sul pulsante */
+.btn-prenota:hover {
+    background-color: #e60000;
 }
