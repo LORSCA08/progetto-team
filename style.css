@@ -60,3 +60,161 @@
 .btn-prenota:hover {
     background-color: #e60000;
 }
+
+:root {
+    --border: #e2d9ca;          
+    --bg-main: #f7f4ee;         
+    --bg-card: #ffffff;         
+    --bg-alt: #eee6d8;          
+    --text-dark: #3a322c;       
+    --text-muted: #73685f;      
+    --accent: #bc5a3a;         
+    
+    --font-serif: Georgia, 'Times New Roman', serif;
+    --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    
+    --radius: 12px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+  }
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .section-header .subtitle {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent);
+    font-weight: 600;
+    display: block;
+  }
+  
+  .section-header h2 {
+    font-family: var(--font-serif);
+    font-size: 2.2rem;
+    margin: 6px 0 0 0;
+    color: var(--text-dark);
+  }
+
+  .services-section {
+    padding: 60px 0;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  .service-card {
+    background-color: var(--bg-card);
+    padding: 28px 20px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+  }
+  
+  .service-card h3 {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    margin: 0 0 10px 0;
+    color: var(--text-dark);
+  }
+  
+  .service-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin: 0;
+  }
+
+  .menu-section {
+    padding: 60px 0;
+    background-color: var(--bg-alt);
+  }
+  
+  .pizza-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  
+  .pizza-card {
+    background-color: var(--bg-card);
+    padding: 28px 24px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  .pizza-card.highlight {
+    border-color: var(--accent);
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 12px;
+  }
+  
+  .card-header h3 {
+    font-family: var(--font-serif);
+    font-size: 1.3rem;
+    margin: 0;
+    color: var(--text-dark);
+  }
+  
+  .price {
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--accent);
+  }
+  
+  .ingredients {
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    margin: 0 0 20px 0;
+    flex-grow: 1;
+  }
+  
+  .btn-order {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    color: var(--text-dark);
+    border: 1px solid var(--text-dark);
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .btn-order:hover {
+    background-color: var(--accent);
+    color: #ffffff;
+    border-color: var(--accent);
+  }
+
+  @media (max-width: 768px) {
+    .services-section, .menu-section {
+      padding: 40px 0;
+    }
+  }
+
